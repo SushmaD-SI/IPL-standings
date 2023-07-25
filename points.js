@@ -1,0 +1,126 @@
+
+var points = [
+
+
+         
+    {
+        "Team" :"GT",
+        "Matches": 14,
+        "Won": 10,
+        "Loss":4,
+        "NRR":0.809,
+        "Pts" :20,
+        "Last5" : "W  W L W W"
+
+    },
+
+    {
+
+        "Team" :"CSK",
+        "Matches": 14,
+        "Won": 8,
+        "Loss":5,
+        "NRR":0.652,
+        "Pts" :17,
+        "Last5" : "W  L W W -"
+
+    },
+
+    {
+
+        "Team" :"LSG",
+        "Matches": 14,
+        "Won": 8,
+        "Loss":5,
+        "NRR" :0.284,
+        "Pts" :17,
+        "Last5" : "W  W  W  L -"
+
+    },
+    {
+        "Team" :"MI",
+        "Matches": 14,
+        "Won": 8,
+        "Loss":6,
+        "NRR":-0.044,
+        "Pts" :16,
+        "Last5" : "W  L W W L"
+    },
+    {
+
+        "Team" :"RR",
+        "Matches": 14,
+        "Won": 7,
+        "Loss":7,
+        "NRR":0.148,
+        "Pts" :14,
+        "Last5" : "W  L  W L L"
+    },
+    {
+        "Team" :"RCB",
+        "Matches": 14,
+        "Won": 7,
+        "Loss":7,
+        "NRR":0.135,
+        "Pts" :14,
+        "Last5" : "L W W L L"
+    },
+    {
+        "Team" :"KKR",
+        "Matches": 14,
+        "Won": 6,
+        "Loss":8,
+        "NRR":-0.239,
+        "Pts" :12,
+        "Last5" : "L W L W W "
+    },
+
+    {
+        "Team" :"PBKS",
+        "Matches": 14,
+        "Won": 6,
+        "Loss":8,
+        "NRR":-0.304,
+        "Pts" :12,
+        "Last5" : "L  L W  L L"
+    },
+    {
+        "Team" :"DC",
+        "Matches": 14,
+        "Won": 5,
+        "Loss":9,
+        "NRR":-0.808,
+        "Pts" :10,
+        "Last5" : "L W L W W"
+        
+    },
+
+    {
+        "Team" :"SRH",
+        "Matches": 14,
+        "Won": 4,
+        "Loss":10,
+        "NRR":-0.590,
+        "Pts" :8,
+        "Last5" : "L L L L W"
+    }
+
+
+]
+
+for(var i in points){
+    var tds = `<tr>
+                    <td>${points[i].Team}</td> 
+                    <td>${points[i].Matches}</td>
+                    <td>${points[i].Won}</td>
+                    <td>${points[i].Loss}</td>
+                    <td>${points[i].NRR}</td>
+                    <td>${points[i].Pts}</td>
+                    <td>${points[i].Last5}</td>
+
+                </tr>`
+                
+    var table =$('#userdata')
+    table.append(tds)
+
+}

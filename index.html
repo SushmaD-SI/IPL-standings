@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Premier League</title>
+    <link rel ="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+    
+   <!-- <script>
+       $(function() {
+       
+       var points=[];
+
+       $.getJSON('data.json' , function(data){
+           $.each(data.points , function(i,f){
+              var tRow ="<tr>" +"<td>" +f.Team +"</td>" +
+                 "<td>" +f.Matches +"</td>" + "<td>" + f.Won + "</td>" + "<td>" + f.Loss+ "</td>" + "<td>" + f.NRR + "</td>" + "<td>" + f.Pts+ "</td>" + "<td>" + f.Last5 + "</td>" + "</tr>"
+                  $(tRow).appendTo("#userdata tbody");
+           });
+
+         
+
+       });
+       
+      
+      });
+
+    </script>-->
+</head>
+<body>
+
+      <nav >
+      <!--<img src="IMAGES/ipl.jpg" height="50" width = "40" alt =""-->
+      <h1 ><center > Indian Premier League</center></h1>
+      <ul id ="mainMenu">
+        <li><a href ="#">MATCHES</a></li>
+        <li><a href ="#">NEWS</a></li>
+        <li><a  id = "line" href ="#">TABLE</a></li>
+        <li><a href ="#">STATS</a></li>
+        <li><a href ="#">PLAYERS</a></li>
+      </ul>
+      </nav>
+      <table id ="userdata">
+        <thead>
+       <tr>
+        <th>Team</th>
+        <th>M</th>
+        <th>W</th>
+        <th>L</th>
+        <th>NRR</th>
+        <th>Pts</th>
+        <th>Last 5</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+     <!-- <tr>
+        <td id ="t1">    1<img id = "logo" src="./IMAGES/GT.png" alt ="GT" height = "30" width ="40"><div id = "team"></div>   GT</td>
+        <td>14</td>
+        <td>10</td>
+        <td>4</td>
+        <td>+0.809</td>
+        <td>20</td>
+        <td>W W L W W</td>
+      </tr>
+      <tr>
+        <td id  ="t1" >   2 <img  id  ="logo" src="./IMAGES/CSK.png" alt ="GT" height = "30" width ="40"><div id = "team"></div>CSK</td>
+        <td>14</td>
+        <td>8</td>
+        <td>5</td>
+        <td>+0.652</td>
+        <td>17</td>
+        <td>W L W W   - </td>
+      </tr>
+      <tr>
+        <td id  ="t1">    3  <img id ="logo" src="./IMAGES/LSG.JPG" alt ="GT" height = "30"  width ="40"><div id ="team"></div>LSG</td>
+        <td>14</td>
+        <td>8</td>
+        <td>5</td>
+        <td>+0.284</td>
+        <td>17</td>
+        <td>W W W L  -</td>
+      </tr>
+      <tr>
+        <td id ="t1">4<img  id ="logo"src="./IMAGES/mi.jpg" alt ="GT" height = "30" width ="45"><div id ="team"></div>MI</td>
+        <td>14</td>
+        <td>8</td>
+        <td>6</td>
+        <td>-0.044</td>
+        <td>16</td>
+        <td>W L W W L</td>
+      </tr>
+      <tr>
+        <td id ="t1">5 <img id ="logo" src="./IMAGES/rr.png" alt ="GT" height = "30" width ="30"><div id ="team"></div>  RR</td>
+        <td>14</td>
+        <td>7</td>
+        <td>7</td>
+        <td>+0.148</td>
+        <td>14</td>
+        <td>W L W L L</td>
+      </tr>
+      <tr>
+        <td id ="t1">6 <img id ="logo" src="./IMAGES/rcb.png" alt ="GT" height = "30" width ="30"><div id ="team"></div> RCB</td>
+        <td>14</td>
+        <td>7</td>
+        <td>7</td>
+        <td>+0.135</td>
+        <td>14</td>
+        <td>L W W L L</td>
+      </tr>
+      <tr>
+        <td id ="t1">7 <img id ="logo" src="./IMAGES/kkr.png" alt ="GT" height = "30" width ="30"><div id ="team"></div> KKR</td>
+        <td>14</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-0.239</td>
+        <td>12</td>
+        <td>L W L W W </td>
+      </tr>
+      <tr>
+        <td id = "t1">8  <img id ="logo" src="./IMAGES/P.jpg" alt ="GT" height = "35" width ="35"><div id="team"></div>PBKS</td>
+        <td>14</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-0.304</td>
+        <td>12</td>
+        <td>L L W L L </td>
+      </tr>
+      <tr><tr>
+        <td id ="t1">9 <img id = "logo" src="./IMAGES/DC.png" alt ="GT" height = "30" width ="30"><div id="team"></div> DC</td>
+        <td>14</td>
+        <td>5</td>
+        <td>9</td>
+        <td>-0.808</td>
+        <td>10</td>
+        <td>L W L L W</td>
+      </tr>
+        <td id ="t1">10<img id ="logo" src="./IMAGES/SRH.jpg" alt ="GT" height = "30" width ="30"><div id="team"></div>SRH</td>
+        <td>14</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-0.509</td>
+        <td>8</td>
+        <td>L L L L W</td>
+      </tr>-->
+     
+      </table>
+      <script src ="./points.js"></script>
+</body>
+</html>
